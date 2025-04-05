@@ -17,3 +17,11 @@ fs.readFile('message.txt', 'utf-8', (err, data) => {
     }
 });
 
+fs.writeFile('message.txt', "Node.js is awesome!", (err) => {
+    if (err) {
+      console.error('Error creating file:', err);
+    } else {
+      console.log('The message.txt file has been successfully created!');
+    }
+});
+
